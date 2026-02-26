@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Domocratic — Smart homes for all (Coming Soon)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, sans-serif;
+      background: #0f1116;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+    }
+    .logo {
+      font-weight: 800;
+      font-size: 1.4rem;
+      background: linear-gradient(90deg,#5dd0ff,#3ecf8e);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 120px 40px 80px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 50px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      font-size: .85rem;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(2.4rem,6vw,4rem);
+      margin: 0;
+      line-height: 1.2;
+    }
+    .sub {
+      color: #b9bdd4;
+      font-size: 1.15rem;
+      max-width: 680px;
+      margin: 20px auto 40px;
+      line-height: 1.6;
+    }
+
+    .cta-form {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .cta-form input {
+      padding: 14px 16px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      background: #1a1d28;
+      color: #fff;
+      width: 260px;
+    }
+    .cta-form button {
+      padding: 14px 20px;
+      background: linear-gradient(90deg,#5dd0ff,#3ec2f4);
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #0a0f13;
+    }
+
+    /* Cards */
+    .audience {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .audience h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #161920;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.08);
+      transition: .2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(93,208,255,.4);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 22px;
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.3rem;
+    }
+    .card p {
+      color: #b0b5cc;
+      line-height: 1.5;
+      font-size: .95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #8a8fa5;
+      font-size: .9rem;
+      border-top: 1px solid rgba(255,255,255,.1);
+      margin-top: 60px;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <span class="logo">Domocratic</span>
+</header>
+
+<section class="hero">
+  <p class="badge">COMING SOON</p>
+
+  <h1>Smart homes for all.</h1>
+
+  <p class="sub">
+    Domocratic empowers homeowners, installers, wholesalers, and manufacturers with the tools,
+    training, and product intelligence needed to make smart‑home adoption simple, clear, and profitable.
+  </p>
+
+  <div class="cta-form">
+    <input id="email" type="email" placeholder="Your email address" />
+    <button onclick="submitEmail()">Get notified</button>
+  </div>
+  <p id="status" style="margin-top:10px; font-size:.9rem; color:#7fe4c9;"></p>
+</section>
+
+<section class="audience">
+  <h2>Built for the Smart‑Home Value Chain</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="images/installer2.jpg" />
+      <div class="card-content">
+        <h3>Installers & Integrators</h3>
+        <p>
+          Simplify installation workflows. Access product guides, BOM generation, and brand‑agnostic
+          recommendations that help you deliver top‑quality smart‑home services.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/wholesaler.jpg" />
+      <div class="card-content">
+        <h3>Wholesalers & Distributors</h3>
+        <p>
+          Strengthen your offering with structured product data, compatibility insights, training codes,
+          and visibility inside the Domocratic smart‑home ecosystem.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/manufacturer.jpg" />
+      <div class="card-content">
+        <h3>Manufacturers</h3>
+        <p>
+          Showcase your devices, provide certified training, and reach the installer base through a neutral,
+          trusted platform focused on real‑world adoption.
+        </p>
+      </div>
+    </div>
+
+    
+<!-- NEW: End Users / Homeowners -->
+  <div class="card">
+    <img src="images/homeowner.jpg">
+    <div class="card-content">
+      <h3>Smart Home Owners & Users</h3>
+      <p>
+        Discover the right smart‑home setup for your needs. Compare devices, understand 
+        what works with what, and get guidance to make your home easier, safer, and more connected — 
+        without complexity.
+      </p>
+    </div>
+  </div>
+
+
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Domocratic — All rights reserved  
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  function submitEmail() {
+    const email = document.getElementById("email").value.trim();
+    const status = document.getElementById("status");
+
+    if (!email.includes("@")) {
+      status.style.color = "#ff8f8f";
+      status.textContent = "Please enter a valid email address.";
+      return;
+    }
+
+    status.style.color = "#7fe4c9";
+    status.textContent = "Thanks! We'll notify you at launch.";
+
+    // OPTIONAL: replace with Vercel serverless function
+    // fetch('/api/send-email', { method:'POST', body: JSON.stringify({ email }) });
+  }
+</script>
+
+</body>
+</html>

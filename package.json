@@ -1,0 +1,10 @@
+{
+  "name": "Domocratic",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Domocratic, Smart Homes for All",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  }
+}
