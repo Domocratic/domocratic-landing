@@ -100,8 +100,14 @@
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 30px;
+    }
+
+    @media (max-width: 860px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
     }
     .card {
       background: #161920;
@@ -151,8 +157,8 @@
 
 <section class="hero">
   <p class="badge">COMING SOON</p>
-
-  <h1>Smart homes for all.</h1>
+  <h1>Domocratic</h1>
+  <h2>Smart Homes for All</h2>
 
   <p class="sub">
     Domocratic empowers homeowners, installers, wholesalers, and manufacturers with the tools,
@@ -170,6 +176,18 @@
   <h2>Built for the Smart‑Home Value Chain</h2>
 
   <div class="cards">
+
+    <div class="card">
+      <img src="images/homeowner.jpg">
+      <div class="card-content">
+        <h3>Smart Home Owners & Users</h3>
+        <p>
+          Discover the right smart‑home setup for your needs. Compare devices, understand 
+          what works with what, and get guidance to make your home easier, safer, and more connected — 
+          without complexity.
+        </p>
+      </div>
+    </div>
 
     <div class="card">
       <img src="images/installer2.jpg" />
@@ -203,21 +221,6 @@
         </p>
       </div>
     </div>
-
-    
-<!-- NEW: End Users / Homeowners -->
-  <div class="card">
-    <img src="images/homeowner.jpg">
-    <div class="card-content">
-      <h3>Smart Home Owners & Users</h3>
-      <p>
-        Discover the right smart‑home setup for your needs. Compare devices, understand 
-        what works with what, and get guidance to make your home easier, safer, and more connected — 
-        without complexity.
-      </p>
-    </div>
-  </div>
-
 
   </div>
 </section>
